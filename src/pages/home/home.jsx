@@ -190,13 +190,7 @@ function HomePage() {
           slidesToScroll: 1,
         },
       },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
+      
     ],
   };
 
