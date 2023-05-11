@@ -14,7 +14,7 @@ import { GoThreeBars } from "react-icons/go";
 import { RxCross1 } from "react-icons/rx";
 
 function Navbar() {
-  const [show, setShow] = useState(false);
+
   const [open, setOpen] = useState(false);
   const [isOpenMobileSearch, setIsOpenMobileSearch] = useState(false);
 
@@ -23,8 +23,7 @@ function Navbar() {
   const handleSearchOpen = () => setOpen(true);
   const handleSearchClose = () => setOpen(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+
   return (
     <div>
       <nav className="nav-main">
@@ -65,7 +64,7 @@ function Navbar() {
 
       <nav className="mobile-navbar">
         <div className="three-bar">
-          <GoThreeBars onClick={handleShow} />
+          <GoThreeBars />
 
           {/* <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
