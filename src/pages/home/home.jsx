@@ -150,6 +150,7 @@ const cardProducts = [
 ];
 
 function HomePage() {
+
   const settings = {
     arrows: true,
     className: "slider variable-width",
@@ -162,6 +163,44 @@ function HomePage() {
     prevArrow: <FiChevronLeft className="slick-prev" />,
     nextArrow: <FiChevronRight className="slick-next" />,
   };
+  const settings2 = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2.5,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    prevArrow: <FiChevronLeft className="slick-prev" />,
+    nextArrow: <FiChevronRight className="slick-next" />,
+    responsive: [
+     
+      {
+        breakpoint: 1141,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 934,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+     
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <section className="section-1">
@@ -181,11 +220,11 @@ function HomePage() {
 
       <section className="section-2">
         <div className="row1">
-          <div className="col1">
+          <div className="col1 col12">
             <img src={Icon1} alt="" />
             <p className="fs-p fc-light">Modern Furniture</p>
           </div>
-          <div className="col1">
+          <div className="col1 col12">
             <img src={Icon2} alt="" />
             <p className="fs-p fc-light">Specially crated for you.</p>
           </div>
@@ -377,8 +416,8 @@ function HomePage() {
 
       <section className="section-9">
         <h3 className="txt-h3">Lazy About, In social media</h3>
-        <div className="whole-sec-8">
-          <Slider {...settings}>
+        <div className="whole-sec-9">
+          <Slider {...settings2}>
             {mediaProducts.map((product, index) => (
               <div className="each-card" key={index}>
                 <img src={product.image} alt={product.name} />
