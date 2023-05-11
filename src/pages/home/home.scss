@@ -1,0 +1,395 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.section-1 {
+    background-image: url("../../assets//images/bkc.png");
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    .text {
+        text-align: left;
+        z-index: 1;
+        padding-left: 40px;
+    }
+    .text-1 {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 80px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .text-2 {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
+.section-2 {
+    background-color: #bc7d6a;
+    height: 124px;
+    padding: 35px;
+    .row1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 5%;
+        .col1 {
+            margin: auto;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            img {
+                margin: 0 20px;
+            }
+            p {
+                margin: auto;
+                color: #fff;
+                // font-family: Proxima Nova;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+            &:not(:last-child)::before {
+                content: "";
+                display: none;
+                position: absolute;
+                right: -50%;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 55px;
+                width: 2px;
+                background-color: #f6f6f6;
+            }
+        }
+    }
+}
+
+.txt-h3 {
+    // font-family: Proxima Nova;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #626262;
+}
+
+.section-3 {
+    padding: 40px;
+    .each-card {
+        margin: 31px;
+    }
+    .slick-next,
+    .slick-prev {
+        color: #626262;
+        width: 42px;
+        height: 42px;
+        z-index: 999;
+        transition: 0.5s ease-out;
+    }
+    .slick-next {
+        right: 20px;
+    }
+    .slick-prev {
+        left: 20px;
+    }
+    .slick-slide {
+        img {
+            margin: auto;
+        }
+    }
+    .item-name {
+        // font-family: Proxima Nova;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #626262;
+    }
+    .item-price {
+        // font-family: Proxima Nova;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: #bc7d6a;
+        text-align: center;
+    }
+    .slider-container:hover .slick-next,
+    .slider-container:hover .slick-prev {
+        display: block !important;
+    }
+}
+
+.section-4 {
+    padding: 40px;
+    .each-card {
+        margin: 10px;
+    }
+    .slick-next,
+    .slick-prev {
+        color: #626262;
+        width: 42px;
+        height: 42px;
+        z-index: 999;
+        transition: 0.5s ease-out;
+    }
+    .slick-next {
+        right: 20px;
+    }
+    .slick-prev {
+        left: 20px;
+    }
+    .item-name {
+        //styleName: 14;
+        // font-family: Proxima Nova;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #626262;
+    }
+}
+
+.section-5 {
+    padding: 40px;
+    .slick-next,
+    .slick-prev {
+        color: #626262;
+        width: 42px;
+        height: 42px;
+        z-index: 999;
+        transition: 0.5s ease-out;
+    }
+    .slick-next {
+        right: 20px;
+    }
+    .slick-prev {
+        left: 20px;
+    }
+    .each-card {
+        margin: 10px;
+        .item-name {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #626262;
+        }
+        .item-price {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 12px;
+            letter-spacing: 0em;
+            text-align: right;
+            color: #bc7d6a;
+            text-align: center;
+        }
+    }
+}
+
+.section-6 {
+    background-color: #bc7d6a;
+    height: auto;
+    color: #fff;
+    .big-txt {
+        // font-family: DM Sans;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: -0.5px;
+        text-align: left;
+        margin-right: 17px;
+    }
+    .row1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .col1 {
+            margin: auto;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            img {
+                margin: 0 20px;
+            }
+            .fs-p {
+                // font-family: DM Sans;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin: auto;
+            }
+            &:not(:last-child)::before {
+                content: "";
+                display: none;
+                position: absolute;
+                right: -50%;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 55px;
+                width: 2px;
+                background-color: #f6f6f6;
+            }
+        }
+    }
+}
+
+.section-7 {
+    padding: 40px;
+    .txt-h3-sec-7 {
+        // font-family: Proxima Nova;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #626262;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .col {
+        flex-basis: calc(25% - 10px);
+        /* Adjust the width as per your requirement */
+        margin-bottom: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+        max-width: 300px;
+        .star {
+            color: #bc7d6a;
+        }
+        img {
+            margin: auto;
+        }
+        p {
+            // font-family: Proxima Nova;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #626262;
+        }
+    }
+    .rmr {
+        // font-family: Proxima Nova;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #bc7d6a;
+    }
+    /* Media query for responsiveness */
+    @media (max-width: 768px) {
+        .col {
+            flex-basis: calc(50% - 10px);
+        }
+    }
+    @media (max-width: 480px) {
+        .col {
+            flex-basis: 100%;
+        }
+    }
+}
+
+.section-8 {
+    background-color: #bc7d6a;
+    color: #fff;
+    padding: 40px;
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .col1 {
+        flex-basis: calc(35% - 15px);
+        margin-bottom: 20px;
+        @media (max-width: 768px) {
+            flex-basis: 100%;
+        }
+    }
+    .col {
+        flex-basis: calc(65% - 15px);
+        margin-bottom: 20px;
+        @media (max-width: 768px) {
+            flex-basis: 100%;
+        }
+    }
+    .sec8-big-txt {
+        // font-family: Proxima Nova;
+        font-size: 48px;
+        font-weight: 400;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 20px;
+        @media (max-width: 768px) {
+            font-size: 30px;
+        }
+    }
+    .sec8-txt {
+        //    font-family: Proxima Nova;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.section-9 {
+    padding: 40px;
+    .each-card {
+        margin: 10px;
+        img {
+            width: 418px;
+            height: 250px;
+        }
+    }
+    .slick-next,
+    .slick-prev {
+        color: #626262;
+        width: 42px;
+        height: 42px;
+        z-index: 999;
+        transition: 0.5s ease-out;
+    }
+    .slick-next {
+        right: 20px;
+    }
+    .slick-prev {
+        left: 20px;
+    }
+    .vtg {
+        color: #bc7d6a;
+        // font-family: Proxima Nova;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+}
